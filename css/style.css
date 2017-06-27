@@ -35,13 +35,11 @@ h1, h2, h3, h4, h5, h6{
   padding: 30px;
   display: flex;
   justify-content: space-between;
-  /*align-items: flex-end;*/
 }
 .group{
 }
 .group1{
   width: 250px;
-  /*align-self: flex-end;*/
 }
 .group2{
   width: 380px;
