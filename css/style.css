@@ -108,7 +108,7 @@ a {
 
 .logo {
     position: absolute;
-    top: 45px;
+    top: 49px;
     left: 60px;
 }
 
@@ -143,6 +143,39 @@ a {
 
 .info-menu li:last-child::after {
     content: "";
+}
+
+
+/* 메인 메뉴 */
+
+.main-menu {
+    background: linear-gradient(to bottom, #fff1eb 0%, #ace0f9 35%, #ace0f9 65%, #fff1eb 100%);
+    list-style-type: none;
+    border-top: 2px solid #181818;
+    border-radius: 0 0 5px 5px;
+    padding-left: 225px;
+    height: 45px;
+}
+
+.main-menu>li {
+    float: left;
+}
+
+.main-menu>li>a {
+    font-size: 1.6rem;
+    font-family: "Noto Sans Bold";
+    color: rgba(255, 255, 255, 0.95);
+    padding: 10px 20.6px 10px 20px;
+    display: block;
+    /*background: black;*/
+    border-left: 2px solid rgba(255, 255, 255, 0.9);
+}
+
+.main-menu ul {
+    list-style-type: none;
+    background: lime;
+    position: absolute;
+    display: none;
 }
 
 .visual {
