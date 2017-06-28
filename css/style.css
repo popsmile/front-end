@@ -159,6 +159,7 @@ a {
 
 .main-menu>li {
     float: left;
+    position: relative;
 }
 
 .main-menu>li>a {
@@ -185,12 +186,22 @@ a {
 
 .main-menu ul {
     list-style-type: none;
-    background: lime;
     position: absolute;
+    font-size: 1.4rem;
+    background: lime;
+    white-space: nowrap;
+    top: 47px;
+}
+
+.main-menu ul li {
+    display: inline-block;
+    padding-right: 30px;
 }
 
 .about-html {
     display: block;
+    top: 0;
+    left: 0;
 }
 
 .about-css {
