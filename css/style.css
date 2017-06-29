@@ -70,7 +70,7 @@ body {
 /* 레이아웃 */
 
 .wrapper {
-    background: url(images/bg_flower.png) no-repeat 50% 0, linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(255, 255, 255, 1) 100%);
+    background: url(images/bg_flower.png) no-repeat 50% 0, linear-gradient(to bottom, #f2f4f7 0%, rgba(255, 255, 255, 1) 100%);
     height: 100vh;
 }
 
@@ -144,11 +144,16 @@ a {
     content: "";
 }
 
+.info-menu a:hover,
+.info-menu a:focus {
+    color: #91a4fd;
+}
+
 
 /* 메인 메뉴 */
 
 .main-menu {
-    background: linear-gradient(to bottom, #ffdde1 0%, #f794a4 35%, #f794a4 65%, #ffdde1 100%);
+    background: linear-gradient(to bottom, #c2e9fb 0%, #a1c4fd 35%, #a1c4fd 65%, #c2e9fb 100%);
     list-style-type: none;
     border-top: 2px solid #181818;
     border-radius: 0 0 5px 5px;
@@ -175,7 +180,7 @@ a {
 
 .main-menu span:hover,
 .main-menu span:focus {
-    color: hsla(0, 80%, 70%, 1);
+    color: #a0a4fd;
     outline: 0;
 }
 
@@ -191,7 +196,7 @@ a {
     position: absolute;
     font-size: 1.4rem;
     white-space: nowrap;
-    top: 47px;
+    top: 45px;
 }
 
 .main-menu ul li {
@@ -210,8 +215,13 @@ a {
     content: "c";
 }
 
+.main-menu ul a:hover,
+.main-menu ul a:focus {
+    color: #91a4fd;
+}
+
 .main-menu ul a {
-    padding: 3px 15px 4px 0;
+    padding: 5px 15px 4px 0;
     display: block;
 }
 
@@ -250,7 +260,7 @@ a {
 }
 
 .main-content {
-    background-color: #fff;
+    background-color: white;
     border-radius: 15px 15px 0 0;
     min-height: 400px;
     padding: 30px;
@@ -258,18 +268,23 @@ a {
     justify-content: space-between;
 }
 
-.group {}
+.group {
+    background: #a1c7fd
+}
 
 .group1 {
     width: 250px;
+    border-radius: 5px;
 }
 
 .group2 {
     width: 380px;
+    border-radius: 5px;
 }
 
 .group3 {
     width: 190px;
+    border-radius: 5px;
 }
 
 .slogan {
@@ -277,7 +292,7 @@ a {
 }
 
 .footer-bg {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(255, 255, 255, 1) 100%);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(255, 255, 255, 1) 100%);
 }
 
 .footer {
