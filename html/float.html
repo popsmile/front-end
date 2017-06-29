@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>float 속성 익히기</title>
+    <style>
+        .box {
+            background: yellow;
+            width: 500px;
+            /*overflow: hidden;  box범위 넘어가는 것은 hidden 하기*/
+        }
+        
+        .box::after {
+            content: "";
+            background: lime;
+            display: block;
+            clear: both;
+        }
+        
+        .box img {
+            float: right;
+            /*position: relative;*/
+            /*right: -50px;*/
+        }
+        
+        .note {
+            background: pink;
+            /*clear: both;  float 이미지랑 안겹치게 마진 자동생성*/
+            /*margin-top: 100px; 10하면 안벌어짐 왜냐면 겹쳐서 안나타남*/
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <img src="../images/news.gif" alt=""> 29일 오전에는 폴 라이언 하원의장을 비롯한 상·하원 지도부와의 간담회에 이어 저녁에는 트럼프
+    </div>
+    <div class="note">
+        29일 오전에는 폴 라이언 하원의장을 비롯한 상·하원 지도부와의 간담회에 이어 저녁에는 트럼프 대통령 내외의 초청으로 김정숙 여사와 함께 백악관을 방문, 정상간 첫 상견례를 겸한 환영만찬을 한다
+    </div>
+</body>
+
+</html>
