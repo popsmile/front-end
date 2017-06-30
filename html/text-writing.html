@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>텍스트 애니메이션</title>
+    <!--<style> 내가 한 코드
+        .textarea {
+            min-height: 25px;
+            min-width: 150px;
+            position: relative;
+            display: inline-block;
+        }
+        
+        .text {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 20px;
+            color: black;
+            display: inline-block;
+        }
+        
+        .textarea::after {
+            content: "";
+            position: absolute;
+            background: white;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 50px;
+            animation: textwriting-ani 4s infinite;
+        }
+        
+        @keyframes textwriting-ani {
+            0% {
+                transform: translate(0, 0);
+            }
+            100% {
+                transform: translate(260px, 0);
+            }
+        }
+    </style>-->
+    <style>
+        body {
+            margin: 50px;
+            background: silve;
+            font-family: sans-serif;
+        }
+        
+        h1 {
+            text-align: center;
+            color: red;
+            margin-bottom: 50px;
+        }
+        
+        p {
+            color: black;
+            font-size: 60px;
+            font-weight: bold;
+            animation: text-writing 4s infinite;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+        
+        @keyframes text-writing {
+            0% {
+                width: 0px;
+            }
+            100% {
+                width: 815px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Text Writing Animation</h1>
+    <p class="text">Welcome to CSS Animation</p>
+
+    <!--<div class="textarea"> 내가 한 코드
+        <p class="text">Welcome to CSS Animation</p>
+    </div>-->
+</body>
+
+</html>
