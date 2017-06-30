@@ -29,6 +29,6 @@ $(function() {
 | 점수  | 100  | 90  |
 | 학점  | A+  | A0  |
 
-<img src="http://www.mbcpopopo.com/home/bbs/table/bd_01/upload/tkatjdtodaudshxmqnr01.jpg" width="200px" align="right">
+<img src="http://www.mbcpopopo.com/home/bbs/table/bd_01/upload/tkatjdtodaudshxmqnr01.jpg" width="200px" >
 
 이것으로 마크다운 ~~완성~~ **시작**입니다. 
