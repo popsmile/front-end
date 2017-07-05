@@ -74,6 +74,7 @@ html {
 body {
     font-family: 'Noto Sans Regular', sans-serif;
     font-size: 1.4rem;
+    line-height: 1.2;
 }
 
 
@@ -117,7 +118,7 @@ a {
 
 .logo {
     position: absolute;
-    top: 49px;
+    top: 45px;
     left: 60px;
 }
 
@@ -230,7 +231,7 @@ a {
 }
 
 .main-menu ul a {
-    padding: 5px 15px 4px 0;
+    padding: 7px 15px 4px 0;
     display: block;
 }
 
@@ -397,6 +398,7 @@ a {
     height: 22px;
     border: 1px solid #aaa;
     padding: 1px 1px 1px 5px;
+    font-family: inherit;
 }
 
 .btn-login {
@@ -484,20 +486,24 @@ a {
     margin: 14px 0 0 0;
 }
 
-.term-list dd {
+.term-list-thumbnail,
+.term-list-brief {
     margin: 0;
 }
 
 .term-list-subject {
     color: #296897;
-    float: right;
-    width: 145px;
 }
 
 .term-list-thumbnail {
     float: left;
 }
 
+.term-list-brief {
+    margin-top: 5px;
+}
+
+.term-list-subject,
 .term-list-brief {
     float: right;
     width: 145px;
@@ -509,8 +515,21 @@ a {
     clear: both;
 }
 
+.even .term-list-subject,
+.even .term-list-brief {
+    float: left;
+    width: 145px;
+}
+
+.even .term-list-thumbnail {
+    float: right;
+}
+
 
 /* 콘텐츠컬럼2 */
+
+
+/* 통합검색 */
 
 .search-form {
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(255, 255, 255, 1) 100%);
@@ -518,7 +537,7 @@ a {
     border-radius: 13px 13px 0 0;
     border: 1px solid #aaa;
     border-bottom: 0;
-    padding: 20px 20px 0 20px;
+    padding: 13px 20px 0 20px;
 }
 
 .search-form fieldset {
@@ -547,6 +566,45 @@ a {
     border: 1px solid #aaa;
     font-family: inherit;
     width: 50px;
+}
+
+
+/* 게시판 */
+
+.board {
+    margin-top: 20px;
+    background: yellow;
+}
+
+.notice-heading {
+    border: 1px solid skyblue;
+    color: skyblue;
+    border-radius: 5px 5px 0 0;
+    border-bottom: 0;
+    display: inline-block;
+    padding: 5px 10px;
+}
+
+.notice-list {
+    display: block;
+    list-style-type: none;
+    width: 300px;
+    background: red;
+    margin-top: 13px;
+}
+
+.notice-list li {
+    margin: 7px;
+}
+
+.notice-list a {
+    background: pink;
+    display: block;
+}
+
+.notice-list a::before {
+    font-family: "webcafeIcon";
+    content: "r";
 }
 
 
