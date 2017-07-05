@@ -572,20 +572,25 @@ a {
 /* 게시판 */
 
 .board {
+    height: 170px;
     margin-top: 20px;
     background: yellow;
+    position: relative;
 }
 
-.notice-heading {
+.notice-heading,
+.library-heading {
     border: 1px solid skyblue;
     color: skyblue;
     border-radius: 5px 5px 0 0;
     border-bottom: 0;
     display: inline-block;
     padding: 5px 10px;
+    cursor: pointer;
 }
 
-.notice-list {
+.notice-list,
+.library-list {
     display: block;
     list-style-type: none;
     width: 300px;
@@ -593,18 +598,34 @@ a {
     margin-top: 13px;
 }
 
-.notice-list li {
+.notice-list li,
+.library-list li {
     margin: 7px;
 }
 
-.notice-list a {
+.notice-list a,
+.library-list a {
     background: pink;
     display: block;
 }
 
-.notice-list a::before {
+.notice-list a::before,
+.library-list a::before {
     font-family: "webcafeIcon";
     content: "r";
+}
+
+.notice-more,
+.library-more {
+    background: green;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 5px 5px;
+}
+
+.icon-plus::before {
+    color: skyblue;
 }
 
 
