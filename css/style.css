@@ -27,9 +27,9 @@
 
 /* 숨김 콘텐츠 */
 
-legend {
+legend,
+.hidden {
     position: absolute;
-    background: yellow;
     left: -9999em;
 }
 
@@ -438,6 +438,28 @@ a {
 
 .find {
     float: right;
+}
+
+
+/* 유효성 검사 배너 링크 */
+
+.validation {
+    margin-top: 20px;
+}
+
+.validation-list li {
+    list-style-type: none;
+    background: url(images/validation_icon.png) no-repeat 16px 5px, linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(0, 0, 0, 0.1) 100%);
+    border-radius: 15px;
+    border: 1px solid #aaa;
+    height: 30px;
+    margin-bottom: 10px;
+    line-height: 27px;
+    text-indent: 3em;
+}
+
+.validation-list a {
+    display: block;
 }
 
 .slogan {
