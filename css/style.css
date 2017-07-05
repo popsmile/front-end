@@ -346,6 +346,9 @@ a {
 }
 
 
+/* 콘텐츠컬럼1 */
+
+
 /* 로그인 */
 
 .login {
@@ -476,18 +479,26 @@ a {
 .term-heading {
     font-family: "Noto Sans Bold", sans-serif;
     font-size: 1.5rem;
-    margin-bottom: 15px;
+}
+
+.term-list {
+    margin: 14px 0 0 0;
+}
+
+.term-list dd {
+    margin: 0;
 }
 
 .term-list-subject {
     color: #296897;
+    float: right;
+    width: 145px;
 }
 
 .term-list-thumbnail {
     float: left;
 }
 
-.term-list-subject,
 .term-list-brief {
     float: right;
     width: 145px;
