@@ -449,18 +449,58 @@ a {
 
 .validation-list li {
     list-style-type: none;
-    background: url(images/validation_icon.png) no-repeat 16px 5px, linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(0, 0, 0, 0.1) 100%);
+    background: url("images/validation_icon.png") no-repeat 16px 45%, linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(0, 0, 0, 0.1) 100%);
     border-radius: 15px;
     border: 1px solid #aaa;
     height: 30px;
     margin-bottom: 10px;
     line-height: 27px;
-    text-indent: 3em;
+    text-indent: 42px;
 }
 
 .validation-list a {
     display: block;
 }
+
+
+/* 용어 설명*/
+
+.term {
+    margin-top: 20px;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(0, 0, 0, 0.1) 100%);
+    border-radius: 7px;
+    border: 1px solid #aaa;
+    padding: 15px;
+}
+
+.term-heading {
+    font-family: "Noto Sans Bold", sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.term-list-subject {
+    color: #296897;
+}
+
+.term-list-thumbnail {
+    float: left;
+}
+
+.term-list-subject,
+.term-list-brief {
+    float: right;
+    width: 145px;
+}
+
+.term-list::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+/* 슬로건 */
 
 .slogan {
     height: 10vh;
