@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'fontello';
-    src: url('font/fontello.eot?61030746');
-    src: url('font/fontello.eot?61030746#iefix') format('embedded-opentype'), url('font/fontello.woff2?61030746') format('woff2'), url('font/fontello.woff?61030746') format('woff'), url('font/fontello.ttf?61030746') format('truetype'), url('font/fontello.svg?61030746#fontello') format('svg');
+    src: url('font/fontello.eot?99739791');
+    src: url('font/fontello.eot?99739791#iefix') format('embedded-opentype'), url('font/fontello.woff2?99739791') format('woff2'), url('font/fontello.woff?99739791') format('woff'), url('font/fontello.ttf?99739791') format('truetype'), url('font/fontello.svg?99739791#fontello') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -17,7 +17,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'fontello';
-    src: url('../font/fontello.svg?61030746#fontello') format('svg');
+    src: url('../font/fontello.svg?99739791#fontello') format('svg');
   }
 }
 */
@@ -71,6 +71,13 @@
 
 
 /* '' */
+
+.icon-plus:before {
+    content: '\e803';
+}
+
+
+/* '' */
 
 .icon-paper-plane-empty:before {
     content: '\f1d9';
