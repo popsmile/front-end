@@ -1,4 +1,5 @@
 @charset "utf-8";
+@import "fontello.css";
 
 /* 웹폰트 선언 */
 
@@ -182,7 +183,6 @@ a {
     line-height: 45px;
     padding: 0 20.3px;
     display: block;
-    /*background: black;*/
     border-left: 2px solid rgba(255, 255, 255, 0.9);
     text-shadow: 1px 0px 0 #000, 0px 1px 0 #000, -1px 0px 0 #000, 0px -1px 0 #000;
 }
@@ -412,9 +412,32 @@ a {
     background: #fff;
     border-radius: 0 0 5px 5px;
     list-style-type: none;
-    display: flex;
+    /*display: flex;*/
     justify-content: space-between;
     padding: 0 10px 10px 10px;
+    font-size: 1.3rem;
+}
+
+
+/* 플로트 이슈를 해결하기 위한 clearfix */
+
+.member::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.icon-user::before,
+.icon-search::before {
+    color: #f20;
+}
+
+.join {
+    float: left;
+}
+
+.find {
+    float: right;
 }
 
 .slogan {
