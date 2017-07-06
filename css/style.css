@@ -743,6 +743,45 @@ a {
 }
 
 
+/* 신규 이벤트와 관련 사이트*/
+
+.event-related {
+    background: yellow;
+}
+
+.event {
+    background: orangered;
+}
+
+.event-heading {
+    background: skyblue;
+}
+
+.event-thumbnail {
+    background: pink;
+}
+
+.event-thumbnail figcaption {
+    background: wheat;
+}
+
+.related {
+    background: yellowgreen;
+}
+
+.related-heading {
+    background: skyblue;
+}
+
+.related-list {
+    background: pink;
+}
+
+.related-list a {
+    background: wheat;
+}
+
+
 /* 슬로건 */
 
 .slogan {
