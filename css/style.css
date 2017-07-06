@@ -529,43 +529,52 @@ a {
 /* 콘텐츠컬럼2 */
 
 
-/* 통합검색 */
+/* 검색 폼 */
 
-.search-form {
+.search {
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(255, 255, 255, 1) 100%);
-    /*height: 50px;*/
     border-radius: 13px 13px 0 0;
     border: 1px solid #aaa;
     border-bottom: 0;
-    padding: 13px 20px 0 20px;
+    padding: 20px 25px 10px 25px;
 }
 
 .search-form fieldset {
     border: 0;
+    margin: 0;
+    padding: 0;
 }
 
 .search-form label {
     cursor: pointer;
 }
 
+
+/*.search-form label::before {
+    content: "z";
+    font-family: "webcafeIcon";
+    position: relative;
+    top: 2px;
+}*/
+
 .search-form input {
-    box-sizing: border-box;
-    width: 180px;
+    width: 195px;
     height: 22px;
     border: 1px solid #aaa;
+    border-radius: 1px;
     padding: 1px 1px 1px 5px;
-    margin-left: 3px;
+    margin: 0 2px;
     font-family: inherit;
 }
 
 .btn-search {
-    background: rgba(0, 0, 0, 0) linear-gradient(to bottom, #333, #999);
+    background: rgba(0, 0, 0, 0) linear-gradient(to bottom, #666, #ccc);
     border-radius: 3px;
-    margin-left: 2px;
+    height: 22px;
     color: #fff;
     border: 1px solid #aaa;
+    padding: 0 10px;
     font-family: inherit;
-    width: 50px;
 }
 
 
@@ -574,7 +583,7 @@ a {
 .board {
     height: 170px;
     margin-top: 20px;
-    background: yellow;
+    background: #aaa;
     position: relative;
 }
 
@@ -591,28 +600,38 @@ a {
 
 .notice-list,
 .library-list {
-    display: block;
     list-style-type: none;
-    width: 300px;
     background: red;
     margin-top: 13px;
 }
 
 .notice-list li,
 .library-list li {
-    margin: 7px;
+    margin: 6px;
+    position: relative;
 }
 
 .notice-list a,
 .library-list a {
     background: pink;
+    width: 290px;
     display: block;
+    font-size: 1.3rem;
+    ;
 }
 
 .notice-list a::before,
 .library-list a::before {
     font-family: "webcafeIcon";
     content: "r";
+}
+
+.notice-list time,
+.library-list time {
+    position: absolute;
+    top: -1px;
+    right: -5px;
+    background: skyblue;
 }
 
 .notice-more,
