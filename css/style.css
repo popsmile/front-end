@@ -761,7 +761,8 @@ a {
 }
 
 .event-heading,
-.related-heading {
+.related-heading,
+.popular-heading {
     font-family: "Noto Sans Bold", sans-serif;
     font-size: 1.5rem;
     color: white;
@@ -769,7 +770,8 @@ a {
 }
 
 .event-heading span,
-.related-heading span {
+.related-heading span,
+.popular-heading span {
     color: pink;
     margin-left: 3px;
 }
@@ -829,8 +831,12 @@ a {
     transition: all 1s;
 }
 
-.related-list:hover,
-.related-list:focus {
+.list-focus-act {
+    height: 125px;
+    padding: 10px 0;
+}
+
+.related-list:hover {
     height: 125px;
     padding: 10px 0;
 }
@@ -848,13 +854,13 @@ a {
     background: linear-gradient(to bottom, #d4eefb 0%, #a1c7fd 100%);
     margin-top: 20px;
     padding: 10px;
-    /*border: 1px solid #aaa;*/
     box-shadow: 3px 2px 3px 0 rgba(0, 0, 0, 0.4);
     border-radius: 5px;
     position: relative;
 }
 
-.popular-heading {
+
+/*.popular-heading {
     font-family: "Noto Sans Bold", sans-serif;
     font-size: 1.5rem;
     color: white;
@@ -865,20 +871,59 @@ a {
     color: pink;
     margin-left: 3px;
 }
+위에 이벤트 사이트 heading 과 함께 적용함
+*/
 
 .popular-list {
-    background: orangered;
     padding: 0;
+    margin: 12px 0 0 0;
+    overflow: hidden;
+}
+
+.popular-list li::before {
+    background: #bbb;
+    border-radius: 3px;
+    padding: 0 5px;
+    content: counter(number, decimal);
+    font-size: 1.2rem;
+    color: white;
+    margin-right: 5px;
 }
 
 .popular-list li {
-    background: pink;
+    counter-increment: number;
+    margin-bottom: 1px;
+    position: relative;
 }
 
-.popular a {
+.up,
+.down,
+.same {
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: 50%;
+    right: 0;
+    font-style: normal;
+    padding-top: 11px;
+    width: 9px;
+    height: 0;
+    overflow: hidden;
+    background: url("images/rank.png") no-repeat;
+    transform: translateY(-50%)
+}
+
+.down {
+    background-position: 0 100%;
+}
+
+.same {
+    background-position: 0 50%;
+}
+
+.popular-more {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
 }
 
 
